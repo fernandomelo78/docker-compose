@@ -1,0 +1,10 @@
+
+services: 
+  n8n:
+    image: n8nio/n8n:1.114.3
+    ports:
+      - 5678:5678
+    volumes:
+      - ./n8n-data:/home/node/.n8n
+    environment:
+      - GENERIC_TIMEZONE=America/Sao_Paulo  
